@@ -1,0 +1,664 @@
+{
+    "mapwidth": "1300",
+    "mapheight": "900",
+    "categories": [
+      {
+        "id": "CarRentals",
+        "title": "Car Rentals",
+        "color": "#b7a6bd",
+        "show": "false"
+      },
+      {
+        "id": "PrayerRooms",
+        "title": "Prayer Rooms",
+        "color": "#b7a6bd",
+        "show": "false"
+      },
+      {
+        "id": "shopndine",
+        "title": "Shop & Dine",
+        "color": "#b7a6bd",
+        "show": "true"
+      },
+      {
+        "id": "facilities",
+        "title": "Facilities",
+        "color": "#b7a6bd",
+        "show": "true"
+      },
+      {
+        "id": "securityngate",
+        "title": "Secutiry & Departure Gates",
+        "color": "#b7a6bd",
+        "show": "true"
+      }
+    ],
+    "levels": [
+      {
+        "id": "level_0",
+        "title": "Level 0",
+        "map": "./interactive_map/images/mall/mall-ground.svg",
+        "minimap": "./interactive_map/images/mall/mall-ground-mini.jpg",
+        "show": "true",
+        "locations": [
+          {
+            "id": "Medical Clinic",
+            "title": "Medical Clinic",
+            "about": "",
+            "description": "",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.320",
+            "y": "0.250",
+            "pin": "pin_1",
+            "zoom": "3"
+          },
+          {
+            "id": "Male/Female Toilet",
+            "title": "Male/Female Toilet",
+            "description": "",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.400",
+            "y": "0.220",
+            "pin": "pin_2",
+            "zoom": "2"
+          },
+          {
+            "id": "enterprise",
+            "title": "Enterprise",
+            "about": "Car Rental Service",
+            "description": "",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "pin": "pin_3",
+            "x": "0.450",
+            "y": "0.400",
+            "zoom": "3"
+          },
+          {
+            "id": "bahwan",
+            "title": "Bahwan",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.450",
+            "y": "0.430",
+            "pin": "pin_3"
+          },
+          {
+            "id": "budget",
+            "title": "Budget",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.4530",
+            "y": "0.4665",
+            "pin": "pin_3"
+          },
+          {
+            "id": "dollar",
+            "title": "Dollar",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.4530",
+            "y": "0.5018",
+            "pin": "pin_3"
+          },
+          {
+            "id": "avis",
+            "title": "Avis",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.54",
+            "y": "0.52",
+            "pin": "pin_3"
+          },
+          {
+            "id": "etihad",
+            "title": "Etihad",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.5446",
+            "y": "0.4850",
+            "pin": "pin_3"
+          },
+          {
+            "id": "speedy",
+            "title": "Speedy",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.54",
+            "y": "0.47",
+            "pin": "pin_3"
+          },
+          {
+            "id": "almaha",
+            "title": "Al Maha",
+            "about": "Car Rental Service",
+            "description": "",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.5446",
+            "y": "0.4392",
+            "pin": "pin_3"
+          },
+          {
+            "id": "4x4",
+            "title": "4X4 Car Rentals",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.54",
+            "y": "0.41",
+            "pin": "pin_3"
+          },
+          {
+            "id": "maleprayer",
+            "title": "Level 0 - Male Prayer Room",
+            "about": "Male Prayer Room",
+            "description": "Male Prayer Room",
+            "category": "PrayerRooms",
+            "thumbnail": "",
+            "x": "0.533",
+            "y": "0.78",
+            "pin": "pin_4"
+          },
+          {
+            "id": "femaleprayer",
+            "title": "Level 0 - Female Prayer Room",
+            "about": "Female Prayer Room",
+            "description": "Female Prayer Room",
+            "category": "PrayerRooms",
+            "thumbnail": "",
+            "x": "0.4719",
+            "y": "0.7831",
+            "pin": "pin_4"
+          },
+          {
+            "id": "europecar",
+            "title": "Europecar",
+            "about": "Car Rental Service",
+            "description": "Car Rental Service",
+            "category": "CarRentals",
+            "thumbnail": "",
+            "x": "0.54",
+            "y": "0.39",
+            "pin": "pin_3"
+          }
+        ]
+      },
+      {
+        "id": "first-floor",
+        "title": "First Floor",
+        "map": "./interactive_map/images/mall/mall-level1.svg",
+        "minimap": "./interactive_map/images/mall/mall-level1-mini.jpg",
+        "locations": [
+          {
+            "id": "whsmith",
+            "title": "WH Smith",
+            "about": "WH Smith",
+            "description": "Gift Items shopping",
+            "category": "shopndine",
+            "thumbnail": "",
+            "x": "0.435",
+            "y": "0.2769",
+            "pin": "pin_6"
+          },
+          {
+            "id": "InformationDesk",
+            "title": "Information Desk",
+            "about": "Information Desk",
+            "description": "Help desk for all your Airport related queries",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.505",
+            "y": "0.29"
+          },
+          {
+            "id": "aljadeed",
+            "title": "Al Jadeed Exchange",
+            "about": "Al Jadeed Exchange",
+            "description": "Al Jadeed Exchange",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.535",
+            "y": "0.26"
+          },
+          {
+            "id": "Omantel",
+            "title": "Omantel",
+            "about": "Omantel",
+            "description": "Omantel, Local Telecom Operator",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.5667",
+            "y": "0.2681",
+            "pin": "pin_19"
+          },
+          {
+            "id": "Ooredoo",
+            "title": "Ooredoo",
+            "about": "Ooredoo",
+            "description": "Ooredoo, Local Telecom Operator",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.5775",
+            "y": "0.2681",
+            "pin": "pin_19"
+          },
+          {
+            "id": "dorra",
+            "title": "Dorra Cafe",
+            "about": "Dorra Cafe",
+            "description": "Dorra Cafe, airport restaurant",
+            "category": "shopndine",
+            "thumbnail": "",
+            "x": "0.66",
+            "y": "0.245",
+            "pin": "pin_7"
+          },
+          {
+            "id": "nbo",
+            "title": "NBO ATM",
+            "about": "NBO ATM",
+            "description": "National Bank Of Oman ATM",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.480",
+            "y": "0.3246"
+          },
+          {
+            "id": "DofarTravel",
+            "title": "Dofar Travel & Tourism",
+            "about": "Dofar Travel & Tourism",
+            "description": "For Booking of flight tickets and tour packages",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.48",
+            "y": "0.3246",
+            "pin": "pin_19"
+          },
+          {
+            "id": "Bank Dofar ATM",
+            "title": "Bank Dofar ATM",
+            "about": "Bank Dofar ATM",
+            "description": "Bank Dofar ATM Machine",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.528",
+            "y": "0.3246",
+            "pin": "pin_19"
+          },
+          {
+            "id": "visadeposit",
+            "title": "Visa Deposit Counter",
+            "about": "Visa Deposit Counter",
+            "description": "",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.625",
+            "y": "0.35",
+            "pin": "pin_19"
+          },
+          {
+            "id": "IntExit",
+            "title": "International Passenger Arrival",
+            "about": "International Passenger Arrival Door",
+            "description": "International Passenger Arrival Door",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.545",
+            "y": "0.348"
+          },
+          {
+            "id": "DomestExit",
+            "title": "Domestic Passenger Arrival",
+            "about": "Domestic Passenger Arrival",
+            "description": "Domestic Passenger Arrival way to exit",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.612",
+            "y": "0.40",
+            "pin": "pin_17"
+          },
+          {
+            "id": "OmanAir",
+            "title": "Oman Air",
+            "about": "Oman Air",
+            "description": "Oman Air flight tickets booking and Information Counter",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.393",
+            "y": "0.365",
+            "pin": "pin_21"
+          },
+          {
+            "id": "checkin01",
+            "title": "Check-in Counter",
+            "about": "Check-in Counter",
+            "description": "Check-in Counter for Domestic and International Flights",
+            "category": "securityngate",
+            "thumbnail": "",
+            "x": "0.392",
+            "y": "0.43",
+            "pin": "pin_13"
+          },
+          {
+            "id": "checkin02",
+            "title": "Check-in Counter",
+            "about": "Check-in Counter",
+            "description": "Check-in Counter for Domestic and International Flights",
+            "category": "securityngate",
+            "thumbnail": "",
+            "x": "0.48",
+            "y": "0.43",
+            "pin": "pin_13"
+          },
+          {
+            "id": "DutyFree",
+            "title": "Duty Free Shop",
+            "about": "Duty Free Shop",
+            "description": "Departure Duty Free Shop",
+            "category": "shopndine",
+            "thumbnail": "",
+            "x": "0.497",
+            "y": "0.47",
+            "pin": "pin_8"
+          },
+          {
+            "id": "EpassportControl",
+            "title": "E-Passport Control Station",
+            "about": "E-Passport Control Station",
+            "description": "E-Passport Control Checkpoint",
+            "category": "securityngate",
+            "thumbnail": "",
+            "x": "0.442",
+            "y": "0.587",
+            "pin": "pin_20"
+          },
+          {
+            "id": "AirportLounge01",
+            "title": "Airport Lounge",
+            "about": "Airport Lounge",
+            "description": "Airport Lounge",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.395",
+            "y": "0.60"
+          },
+          {
+            "id": "AirportLounge02",
+            "title": "Prime Lounge",
+            "about": "Prime Lounge",
+            "description": "Departure Business Class Lounge",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.265",
+            "y": "0.671",
+            "pin": "pin_11"
+          },
+          {
+            "id": "DutyFree02",
+            "title": "Duty Free Shop",
+            "about": "Duty Free Shop Departure",
+            "description": "Duty Free Shop in Departure Area",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.53",
+            "y": "0.68",
+            "pin": "pin_12"
+          },
+          {
+            "id": "AirportLounge03",
+            "title": "Oman Air Lounge",
+            "about": "Oman Air Departure Lounge",
+            "description": "Oman Air Khareef Lounge at Departure",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.74",
+            "y": "0.665",
+            "pin": "pin_11"
+          },
+          {
+            "id": "Costa",
+            "title": "Costa Coffee",
+            "about": "Costa Coffee Departure",
+            "description": "Costa Coffee Departure",
+            "category": "shopndine",
+            "thumbnail": "",
+            "x": "0.68",
+            "y": "0.69",
+            "pin": "pin_9"
+          },
+          {
+            "id": "PrayerRooms06",
+            "title": "Prayer Room",
+            "about": "Prayer Room at Departure",
+            "description": "Prayer Room at Departure",
+            "category": "PrayerRooms",
+            "x": "0.863",
+            "y": "0.685",
+            "pin": "pin_5"
+          },
+          {
+            "id": "Gate4B",
+            "title": "Gate 4B",
+            "about": "Gate 4B",
+            "description": "Departure Gate 4B",
+            "category": "securityngate",
+            "x": "0.885",
+            "y": "0.74",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Gate4A",
+            "title": "Gate 4A",
+            "about": "Gate 4A",
+            "description": "Gate 4A at Departure",
+            "category": "securityngate",
+            "x": "0.786",
+            "y": "0.74",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Gate3B",
+            "title": "Gate 3B",
+            "about": "Gate 3B",
+            "description": "Gate 3B at Departure",
+            "category": "securityngate",
+            "x": "0.715",
+            "y": "0.74",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Gate3A",
+            "title": "Gate 3A",
+            "about": "",
+            "description": "",
+            "category": "securityngate",
+            "x": "0.565",
+            "y": "0.74",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Gate2B",
+            "title": "Gate 2B",
+            "about": "",
+            "description": "",
+            "category": "securityngate",
+            "x": "0.45",
+            "y": "0.74",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Gate1B",
+            "title": "Gate 1B",
+            "about": "",
+            "description": "",
+            "category": "securityngate",
+            "x": "0.22",
+            "y": "0.738",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Gate1A",
+            "title": "Gate 1A",
+            "about": "",
+            "description": "",
+            "category": "securityngate",
+            "x": "0.12",
+            "y": "0.74",
+            "pin": "pin_14"
+          },
+          {
+            "id": "Toilet03",
+            "title": "Toilet",
+            "about": "Toilet at departure",
+            "description": "Toilet at departure",
+            "category": "facilities",
+            "x": "0.068",
+            "y": "0.70"
+          },
+          {
+            "id": "PrayerRooms03",
+            "title": "Prayer Rooms",
+            "about": "Prayer Rooms",
+            "description": "",
+            "category": "PrayerRooms",
+            "x": "0.117",
+            "y": "0.68",
+            "pin": "pin_5"
+          },
+          {
+            "id": "MediaCenter",
+            "title": "MediaCenter",
+            "about": "MediaCenter",
+            "description": "Media Center for passengers to use the internet and electronic devices",
+            "category": "facilities",
+            "x": "0.45",
+            "y": "0.74"
+          },
+          {
+            "id": "Subway",
+            "title": "Subway",
+            "about": "",
+            "description": "",
+            "category": "shopndine",
+            "x": "0.47",
+            "y": "0.76",
+            "pin": "pin_19"
+          },
+          {
+            "id": "OlympicCafe",
+            "title": "Olympic Cafe",
+            "about": "",
+            "description": "",
+            "category": "shopndine",
+            "x": "0.615",
+            "y": "0.78"
+          },
+          {
+            "id": "AlJadeedExhange03",
+            "title": "Al Jadeed Exhange",
+            "about": "Currency Exchange",
+            "description": "Currency Exchange",
+            "category": "facilities",
+            "x": "0.45",
+            "y": "0.74",
+            "pin": "pin_19"
+          },
+          {
+            "id": "PrayerRooms04",
+            "title": "Prayer Rooms",
+            "about": "",
+            "description": "",
+            "category": "PrayerRooms",
+            "x": "0.863",
+            "y": "0.685"
+          },
+          {
+            "id": "PlayArea",
+            "title": "Play Area",
+            "about": "Childrens Play Area",
+            "description": "Childrens Play Area",
+            "category": "facilities",
+            "x": "0.743",
+            "y": "0.775"
+          },
+          {
+            "id": "ReclaimBelt",
+            "title": "Baggage Reclaim Belt",
+            "about": "Baggage Reclaim Belt",
+            "description": "",
+            "category": "securityngate",
+            "x": "0.743",
+            "y": "0.775",
+            "pin": "pin_15"
+          },
+          {
+            "id": "SalamAir",
+            "title": "Salam Air",
+            "about": "Salam Air",
+            "description": "Salam Air counter for airticket booking",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.488",
+            "y": "0.325",
+            "pin": "pin_18"
+          }
+        ]
+      },
+      {
+        "id": "Level_02",
+        "title": "Level 02",
+        "map": "./interactive_map/images/mall/mall-underground.svg",
+        "minimap": "./interactive_map/images/mall/mall-underground-mini.jpg",
+        "locations": [
+          {
+            "id": "arrival01",
+            "title": "International Passengers Arrival",
+            "about": "International Passengers Arrival",
+            "description": "International Travelers Arrival Corridor",
+            "category": "securityngate",
+            "thumbnail": "",
+            "x": "0.2595",
+            "y": "0.5741",
+            "pin": "pin_16"
+          },
+          {
+            "id": "AlJadeedExhange04",
+            "title": "Al Jadeed Exhange",
+            "about": "Al Jadeed Exhange Level 02",
+            "description": "Al Jadeed Exhange at arrival Level 02",
+            "category": "facilities",
+            "thumbnail": "",
+            "x": "0.4281",
+            "y": "0.4996"
+          },
+          {
+            "id": "arrival02",
+            "title": "Domestic Passengers Arrival",
+            "about": "Domestic Passengers Arrival",
+            "description": "Domestic Passengers Arrival",
+            "category": "securityngate",
+            "thumbnail": "",
+            "x": "0.7381",
+            "y": "0.5896",
+            "pin": "pin_16"
+          }
+        ]
+      }
+    ]
+  }

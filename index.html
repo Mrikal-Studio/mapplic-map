@@ -1,0 +1,116 @@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./interactive_map/css/style.css">
+    <link rel="stylesheet" href="./interactive_map/mapplic/mapplic.css">
+    <link href="./interactive_map/css/responsive.css?1727373623" rel="stylesheet">
+</head>
+<body>
+    <div class="container" >
+        <div id="mapplic" class="mapplic-element"></div>
+    </div>
+
+
+    <!-- <mapplic-map
+        id="my-map"
+        data-json="https://mapplic.com/getMapData?id=6AAA3HVY6u05TYjJvG42"
+    ></mapplic-map>
+    <script type="text/javascript" id="mapplic-script" src="https://mapplic.com/mapplic.js"></script> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./interactive_map/js/hammer.min.js"></script>
+    <script src="./interactive_map/js/jquery.mousewheel.js"></script>
+    <script src="./interactive_map/js/script.js"></script>
+    <script src="./interactive_map/mapplic/mapplic.js"></script>
+    <script src="./interactive_map/js/script.js"></script>
+
+    <!-- Add the new script tag here -->
+
+    <!-- Add the mapReady event listener here -->
+    <script>
+        // document.addEventListener('message', function(event) {
+        //     alert('Map received message');
+        //     var data = JSON.parse(event.data);
+        //     console.log('Data received from React Native:', data);
+        // }, false);
+
+        let mapData = null;
+        let level = null;
+
+        window.addEventListener('message', function(event) {
+            // alert('Map received message');
+            var data = JSON.parse(event.data);
+            console.log('Data received from React Native:', data);
+            if(data.level === "2"){
+                for(let i = 0; i < parseInt(data.level); i++){
+                    mapData?.switchLevel('+')
+                }
+            }
+            // if(data.levelName){
+            //     mapData?.switchLevel('+')
+            // }
+            if(data.showLocation){
+                mapData?.showLocation(data.showLocation)
+            }
+        }, false);
+
+
+        const map = document.getElementById('mapplic');
+        
+        // map.addEventListener('mapReady', e => {
+        //     // Add any API operations or other initialization code here
+        // });
+        
+        $('#mapplic').on('mapready', (e,data) => {
+            console.log('Map initialized');
+            mapData = data;
+            console.log('data.data', data?.data)
+            // const store = map.store;
+            if(window.ReactNativeWebView) { // ensure window.ReactNativeWebView is there, otherwise, web app might crash if is not there
+                console.log('data.data', data.data)
+                window.ReactNativeWebView.postMessage(JSON.stringify(data?.data))
+            }
+
+            // for(let i = 0; i < data?.levels.length; i++){
+            //     if(data?.levels[i]?.level === level){
+            //         data?.switchLevel(level)
+            //     }
+            // }        
+            // // do something when layer is switched
+            // store.subscribe(state => state.layer, (layer, prev) => {
+            //     console.log(`Layer switched from ${prev} to ${layer}.`);
+            // });
+        
+            // // access the state (button1 clicked)
+            // document.getElementById('button1').addEventListener('click', () => {
+            //     console.log(`Focused location: ${store.getState().location}`);
+            // });
+        
+            // call method (button2 clicked)
+            // document.getElementById('button2').addEventListener('click', async () => {
+            //     const a = await store.getState().openLocation('s125');
+            //     console.log(a);
+            // });
+        });
+    </script>
+
+    <script>jQuery(function ($) {
+ 
+        $(document).ready(function(){
+            var mapplic = $('#mapplic').mapplic({
+                source: './data.json',	// Using mall.json file as map data
+                sidebar: false, 			// Enable sidebar
+                minimap: false, 			// Enable minimap
+                markers: false, 		// Disable markers
+                fillcolor: false, 		// Disable default fill color
+                fullscreen: true, 		// Enable fullscreen 
+                maxscale: 3			// Setting maxscale to 3 times bigger than the original file
+                
+            });
+        });
+    });</script>
+</body>
+</html>
